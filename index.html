@@ -11,9 +11,9 @@
         <h1>Tech Gear</h1>
         <nav aria-label="Main navigation">
             <ul class="nav-list">
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
    </header> 
@@ -22,7 +22,7 @@
             <h2>Innovative Tech Gadgets</h2>
             <p>Explore our latest range of tech gear designed for performance and style.</p>
         </section>
-        <section class="products" aria-label="Product list">
+        <section id="products" class="products" aria-label="Product list">
             <h2>Our Products</h2>
             <div class="product-grid">
                 <article class="card">
@@ -31,17 +31,11 @@
                     <p>High-quality sound with noise cancellation.</p>
                     <button type="button" aria-label="Buy Wireless Headphone"></button>
                 </article>
-            </div>
-            <h2>Smart Watch</h2>
-            <div class="product-grid">
                 <article class="card">
                     <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=300&q=80" alt="Smart Watch" />
                     <p> Track your health and stay connected on the go. </p>
                     <button type="button" aria-label="Buy Smart Watch"></button>
                 </article>
-            </div>
-            <h2>Portable Speaker</h2>
-            <div class="product-grid">
                 <article class="card">
                     <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="Portable Speaker" />
                     <h3>Wireless Headphone</h3>
@@ -50,6 +44,33 @@
                 </article>
             </div>
         </section>
+        <section id="about" class="about"  aria-label="About Tech Gear">
+            <h2>About Us</h2>
+            <p>We are passionate about creating innovative tech products that enhance your lifestyle.</p>
+        </section>
+        <section id="contact" class="contact" aria-label="Contact heading">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to work together? Send us a message below and we'll get back to you!</p>
+            <form class="contact-form" aria-label="Contact form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name"/>
+                
+                <div>
+                    <label for="female">female</label>
+                    <input type="radio" value="female" name="gender" id="female"/>
+                    <label for="male">male</label>
+                    <input type="radio" value="male" name="gender" id="male"/>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
    </main>
+   <footer>
+        <p>&copy; 2025 Tech Gear. All rights reserved.</p>
+   </footer>
 </body>
 </html>
